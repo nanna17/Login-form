@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register — Vault</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <p class="card-eyebrow">Step 1 of 1</p>
+    <h1 class="card-title">Create account</h1>
+    <p class="card-subtitle">Fill in your details to get started.</p>
+
+    <form class="form" id="regForm" novalidate>
+
+      <!-- Full Name -->
+      <div class="field" id="f-name">
+        <label>Full Name</label>
+        <div class="input-wrap">
+          <input type="text" id="fullname" placeholder="Jane Doe"/>
+        </div>
+        <span class="field-msg" id="msg-name"></span>
+      </div>
+
+      <!-- Email -->
+      <div class="field" id="f-email">
+        <label>Email</label>
+        <div class="input-wrap">
+          <input type="email" id="email" placeholder="jane@example.com"/>
+        </div>
+        <span class="field-msg" id="msg-email"></span>
+      </div>
+
+      <!-- Password -->
+      <div class="field" id="f-password">
+        <label>Password</label>
+        <div class="input-wrap">
+          <input type="password" id="password" placeholder="Min 6 characters"/>
+        </div>
+        <span class="field-msg" id="msg-password"></span>
+      </div>
+
+      <!-- Phone -->
+      <div class="field" id="f-phone">
+        <label>Phone</label>
+        <div class="input-wrap">
+          <input type="tel" id="phone" placeholder="10-digit number"/>
+        </div>
+        <span class="field-msg" id="msg-phone"></span>
+      </div>
+
+      <button type="submit" class="btn" id="submitBtn">
+        <span class="btn-text">Register Account</span>
+      </button>
+
+    </form>
+
+    <!-- 🔥 FIXED LINK -->
+    <p class="footer-note">
+      Already have an account?
+      <a href="login.html">Sign in</a>
+    </p>
+
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
